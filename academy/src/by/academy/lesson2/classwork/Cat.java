@@ -1,8 +1,11 @@
 package by.academy.lesson2.classwork;
 
 public class Cat {
-	int age=1;
+	int age;
+	int money;
 	String nickname;
+	char initials;
+	boolean isHomeAnimal;
 
 	public void grow() {
 		age++;
@@ -21,16 +24,36 @@ public class Cat {
 	}
 
 	public Cat() {
-		// nothing
+		// Конструктор, который позволяет создавать кота без параметров
 	}
 
 	public Cat(String nickname) {
-		this.nickname = nickname; // Добавить конструктор с параметром nickname, чтобы назвать кота
+		this.nickname = nickname; // Конструктор, который задает имя коту
 	}
-int money;
-}
 
-public class Main {
-	System.out.println("Second commit");
+	public int getMoney() // возвращает значение money
+	{
+		return this.money;
+	}
 
+	public void setMoney(int money) // задает значение money
+	{
+		this.money = money;
+	}
+
+	public char getInitials() {
+		return this.initials;
+	}
+
+	public void setInitials(char initials) {
+		this.initials = initials;
+	}
+
+	public boolean getIsHomeAnimal() {
+		return this.isHomeAnimal;
+	}
+
+	public void setIsHomeAnimal(boolean isHomeAnimal) {
+		this.isHomeAnimal = isHomeAnimal;
+	}
 }
