@@ -15,15 +15,17 @@ public class Task3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите дату в формате dd/MM/yyyy");
-		Matcher matcherA = patternA.matcher(sc.nextLine());
-		boolean a = matcherA.matches();
-		System.out.println(a);
+		System.out.println("Введите дату: ");
+		String str = sc.nextLine();
+		Matcher matcherA = patternA.matcher(str);
+		Matcher matcherB = patternB.matcher(str);
 
-		System.out.println("Введите дату в формате dd-MM-yyyy");
-		Matcher matcherB = patternB.matcher(sc.nextLine());
-		boolean b = matcherB.matches();
-		System.out.println(b);
+		if (matcherA.matches()) {
+			System.out.println("Ввведена дата в формате dd/MM/yyyy");
+		} else if (matcherB.matches()) {
+			System.out.println("Введена дата в формате dd-MM-yyyy");
+		} else
+			System.out.println("Дата введена неверно");
 
 		sc.close();
 
