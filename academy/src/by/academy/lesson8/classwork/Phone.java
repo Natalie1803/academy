@@ -48,7 +48,7 @@ public class Phone {
 		}
 	}
 	
-	@Override // shift+alt+s - to string и выбрать что переводить
+	@Override // alt +shift+s - to string и выбрать что переводить в строку, чтобы выводило правильно на экран, выбрать Generate
 	public String toString() {
 		return "Phone [number=" + number + ", model=" + model + ", weight=" + weight + "]";
 	}
