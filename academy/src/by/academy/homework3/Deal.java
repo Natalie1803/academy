@@ -70,5 +70,4 @@ public class Deal {
 		} else
 			System.out.println("Недостаточно средств.");
 	}
-
 }

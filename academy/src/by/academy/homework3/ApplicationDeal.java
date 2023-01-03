@@ -40,7 +40,8 @@ public class ApplicationDeal {
 		products[1] = new Potato("Картофель", 2.0, console.nextInt());
 		System.out.println("Введите количество пакетов молока:");
 		products[2] = new Milk("Молоко", 1.23, console.nextInt());
-
+		
+		
 		console.close();
 		printCheck(products);
 
